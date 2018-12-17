@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AngelWalk</string>
+    <string name="title">제목</string>
+    <string name="content">내용</string>
+</resources>

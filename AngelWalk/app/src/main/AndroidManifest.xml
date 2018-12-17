@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.walk.angel.angelwalk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <meta-data
+        android:name="com.kakao.sdk.AppKey"
+        android:value="edf139f45cfd471ad648c79df3433d57" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/angel_walk_log"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.SightsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Activity.SightInfoActivity" />
+        <activity android:name=".Activity.WheelchairChargingActivity" />
+        <activity android:name=".Activity.WheelchairChargingInfoActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.CommentActivity" />
+        <activity android:name=".Activity.BoardActivity" />
+        <activity android:name=".Activity.BoardDetailActivity" />
+        <activity android:name=".Activity.EditBoardActivity" />
+        <activity android:name=".Activity.SightInfoWebActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SightInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/menu_sights"
+            android:orientation="vertical"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="7dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:background="#70ffffff"/>
+
+            <TextView
+                android:id="@+id/txt_sight_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="관광지 이름"
+                android:textSize="40dp"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관광지 정보"
+            android:textColor="#525051"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_margin="10dp"
+            android:stretchColumns="1"
+            android:shrinkColumns="1"
+            android:padding="15dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp">
+                <TextView
+                    android:text="이름"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/sightInfo_name"
+                    android:text="name"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp">
+                <TextView
+                    android:text="상세 주소"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/sightInfo_address"
+                    android:text="address"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp">
+                <TextView
+                    android:text="상세 정보"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/sightInfo_detail"
+                    android:text="휴관일 : 매주화요일, 관람시간 : 09:00~18:00"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp">
+                <TextView
+                    android:text="문의/안내"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/sightInfo_call"
+                    android:text="010-9349-3932"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp">
+                <TextView
+                    android:text="홈페이지"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/sightInfo_hompage"
+                    android:text="www.github.com/hanareum95"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="장애인 편의시설"
+            android:textColor="#525051"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:layout_margin="10dp"
+            android:stretchColumns="1"
+            android:shrinkColumns="1"
+            android:padding="15dp">
+
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="장애물 정보"
+            android:textColor="#525051"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:layout_margin="10dp"
+            android:stretchColumns="1"
+            android:shrinkColumns="1"
+            android:padding="15dp">
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

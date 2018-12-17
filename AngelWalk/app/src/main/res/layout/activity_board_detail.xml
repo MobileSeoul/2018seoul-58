@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BoardDetailActivity"
+    android:background="#ffffff"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollViewBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layoutBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="27.7dp"
+        android:paddingRight="27.7dp">
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="41.3dp"
+        android:textSize="20sp"
+        android:textColor="#424242"/>
+
+    <TextView
+        android:id="@+id/txtNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="23.3dp"
+        android:layout_alignLeft="@+id/txtTitle"/>
+
+    <TextView
+        android:id="@+id/txtCreateDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignRight="@+id/txtTitle"
+        android:layout_marginTop="23.3dp"/>
+
+    <ImageView
+        android:id="@+id/imgDivision"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/txtNickName"
+        android:layout_marginTop="12.7dp"
+        android:src="@drawable/line"/>
+
+    <TextView
+        android:id="@+id/txtContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgDivision"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="40.3dp"
+        android:paddingLeft="18.7dp"
+        android:paddingRight="18.7dp"/>
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layoutBelowMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="24.3dp"
+        android:paddingRight="24.3dp"
+        android:paddingTop="9.8dp"
+        android:paddingBottom="9.8dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <ImageView
+            android:id="@+id/imgComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/txtCommentCount"
+            android:src="@drawable/oval_2_oval_2_copy_oval_2_copy_2_rectangle_14" />
+
+        <TextView
+            android:id="@+id/txtCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6.7dp"
+            android:src="@drawable/like_status_selector"/>
+
+        <TextView
+            android:id="@+id/txtLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgLike"
+            android:layout_marginLeft="10dp"
+            android:textSize="13.3sp"
+            android:textColor="#424242"/>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
